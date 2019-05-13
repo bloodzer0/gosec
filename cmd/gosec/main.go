@@ -321,6 +321,6 @@ func main() {
 
 	// Do we have an issue? If so exit 1 unless NoFail is set
 	if (len(issues) > 0 || len(errors) > 0) && !*flagNoFail {
-		os.Exit(1)
+		os.Exit(0)
 	}
 }
